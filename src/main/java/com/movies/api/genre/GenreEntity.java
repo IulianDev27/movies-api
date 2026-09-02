@@ -1,4 +1,4 @@
-package com.peliculas.peliculas_api.genre;
+package com.movies.api.genre;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
