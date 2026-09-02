@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.Column;
 
@@ -19,6 +21,10 @@ public class MovieEntity {
     private String title;
     private String synopsis;
     private Integer duration;
+
+    @ManyToOne
+    @JoinColumn(name = "year_id", referencedColumnName = "id_year")
+    private YearEntity year;
 
     public MovieEntity() {
     }
@@ -56,5 +62,13 @@ public class MovieEntity {
 
     public void setDuration(Integer duration) {
         this.duration = duration;
+    }
+
+    public YearEntity getYear() {
+        return year;
+    }
+
+    public void setYear(YearEntity year) {
+        this.year = year;
     }
 }
