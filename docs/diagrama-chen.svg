@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 720" width="1160" height="720" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="1160" height="720" fill="#fdfcfa"/>
+
+  <g stroke="#4a4a4a" stroke-width="1.6" fill="none">
+    <line x1="580" y1="96"  x2="580" y2="182"/>
+    <line x1="580" y1="258" x2="580" y2="372"/>
+    <line x1="190" y1="400" x2="260" y2="400"/>
+    <line x1="400" y1="400" x2="505" y2="400"/>
+    <line x1="655" y1="400" x2="730" y2="400"/>
+    <line x1="870" y1="400" x2="970" y2="400"/>
+
+    <line x1="505" y1="68"  x2="392" y2="44"/>
+    <line x1="505" y1="68"  x2="392" y2="112"/>
+
+    <line x1="115" y1="428" x2="78"  y2="500"/>
+    <line x1="115" y1="428" x2="78"  y2="580"/>
+
+    <line x1="1045" y1="428" x2="1082" y2="500"/>
+    <line x1="1045" y1="428" x2="1082" y2="580"/>
+
+    <line x1="580" y1="428" x2="358" y2="524"/>
+    <line x1="580" y1="428" x2="500" y2="560"/>
+    <line x1="580" y1="428" x2="660" y2="560"/>
+    <line x1="580" y1="428" x2="802" y2="524"/>
+  </g>
+
+  <g fill="#c05621" font-size="17" font-weight="700">
+    <text x="598" y="145">1</text>
+    <text x="598" y="330">N</text>
+    <text x="222" y="390">M</text>
+    <text x="452" y="390">N</text>
+    <text x="690" y="390">N</text>
+    <text x="922" y="390">M</text>
+  </g>
+
+  <g stroke="#2d3748" stroke-width="2" fill="#e8eef6">
+    <rect x="505" y="40"  width="150" height="56" rx="3"/>
+    <rect x="40"  y="372" width="150" height="56" rx="3"/>
+    <rect x="505" y="372" width="150" height="56" rx="3"/>
+    <rect x="970" y="372" width="150" height="56" rx="3"/>
+  </g>
+  <g fill="#1a202c" font-size="18" font-weight="700" text-anchor="middle" letter-spacing="1">
+    <text x="580" y="75">YEAR</text>
+    <text x="115" y="407">GENRE</text>
+    <text x="580" y="407">MOVIE</text>
+    <text x="1045" y="407">ACTOR</text>
+  </g>
+
+  <g stroke="#2d3748" stroke-width="2" fill="#fbe9d8">
+    <polygon points="580,182 650,220 580,258 510,220"/>
+    <polygon points="330,362 400,400 330,438 260,400"/>
+    <polygon points="800,362 870,400 800,438 730,400"/>
+  </g>
+  <g fill="#7b341e" font-size="13" font-weight="600" text-anchor="middle">
+    <text x="580" y="225">RELEASED_IN</text>
+    <text x="330" y="405">BELONGS_TO</text>
+    <text x="800" y="405">ACTS_IN</text>
+  </g>
+
+  <g stroke="#2d3748" stroke-width="1.6" fill="#ffffff">
+    <ellipse cx="330" cy="44"  rx="62" ry="22"/>
+    <ellipse cx="330" cy="112" rx="62" ry="22"/>
+    <ellipse cx="78"  cy="500" rx="62" ry="22"/>
+    <ellipse cx="78"  cy="580" rx="62" ry="22"/>
+    <ellipse cx="1082" cy="500" rx="62" ry="22"/>
+    <ellipse cx="1082" cy="580" rx="62" ry="22"/>
+    <ellipse cx="296" cy="524" rx="62" ry="22"/>
+    <ellipse cx="470" cy="582" rx="62" ry="22"/>
+    <ellipse cx="690" cy="582" rx="62" ry="22"/>
+    <ellipse cx="864" cy="524" rx="62" ry="22"/>
+  </g>
+  <g fill="#1a202c" font-size="13" text-anchor="middle">
+    <text x="330" y="49" font-weight="700">id_year</text>
+    <text x="330" y="117">year_value</text>
+    <text x="78"  y="505" font-weight="700">id_genre</text>
+    <text x="78"  y="585">name</text>
+    <text x="1082" y="505" font-weight="700">id_actor</text>
+    <text x="1082" y="585">name</text>
+    <text x="296" y="529" font-weight="700">id_movie</text>
+    <text x="470" y="587">title</text>
+    <text x="690" y="587">synopsis</text>
+    <text x="864" y="529">duration</text>
+  </g>
+
+  <g>
+    <line x1="300" y1="54" x2="360" y2="54" stroke="#1a202c" stroke-width="1.4"/>
+    <line x1="46" y1="510" x2="110" y2="510" stroke="#1a202c" stroke-width="1.4"/>
+    <line x1="1051" y1="510" x2="1113" y2="510" stroke="#1a202c" stroke-width="1.4"/>
+    <line x1="262" y1="534" x2="330" y2="534" stroke="#1a202c" stroke-width="1.4"/>
+  </g>
+
+  <g transform="translate(40,646)">
+    <rect x="0" y="0" width="34" height="20" rx="2" fill="#e8eef6" stroke="#2d3748" stroke-width="1.6"/>
+    <text x="44" y="15" font-size="13" fill="#2d3748">Entidad</text>
+    <polygon points="170,10 196,0 222,10 196,20" fill="#fbe9d8" stroke="#2d3748" stroke-width="1.6"/>
+    <text x="232" y="15" font-size="13" fill="#2d3748">Relación</text>
+    <ellipse cx="360" cy="10" rx="30" ry="12" fill="#ffffff" stroke="#2d3748" stroke-width="1.6"/>
+    <text x="400" y="15" font-size="13" fill="#2d3748">Atributo</text>
+    <text x="490" y="15" font-size="13" fill="#2d3748" font-weight="700">subrayado</text>
+    <line x1="490" y1="20" x2="562" y2="20" stroke="#2d3748" stroke-width="1.4"/>
+    <text x="566" y="15" font-size="13" fill="#2d3748">= clave primaria (PK)</text>
+  </g>
+</svg>
