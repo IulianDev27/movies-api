@@ -1,4 +1,4 @@
-package com.movies.api.genre;
+package com.movies.api.actor;
 
 import java.util.Set;
 
@@ -15,23 +15,23 @@ import com.movies.api.movie.MovieEntity;
 import jakarta.persistence.Column;
 
 @Entity
-@Table(name = "genres")
-public class GenreEntity {
+@Table(name = "actors")
+public class ActorEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_genre")
+    @Column(name = "id_actor")
     private Long id;
     private String name;
 
     @JsonIgnore
-    @ManyToMany(mappedBy = "genres")
+    @ManyToMany(mappedBy = "actors")
     private Set<MovieEntity> movies;
 
-    public GenreEntity() {
+    public ActorEntity() {
     }
 
-    public GenreEntity(Long id, String name) {
+    public ActorEntity(Long id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -46,13 +46,5 @@ public class GenreEntity {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Set<MovieEntity> getMovies() {
-        return movies;
-    }
-
-    public void setMovies(Set<MovieEntity> movies) {
-        this.movies = movies;
     }
 }
