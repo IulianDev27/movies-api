@@ -1,11 +1,17 @@
 package com.movies.api.year;
 
+import java.util.Set;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import jakarta.persistence.Column;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.movies.api.movie.MovieEntity;
 
 @Entity
 @Table(name = "years")
@@ -18,6 +24,10 @@ public class YearEntity {
 
     @Column(name = "year_value")
     private Integer value;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "year")
+    private Set<MovieEntity> movies;
 
     public YearEntity() {
     }

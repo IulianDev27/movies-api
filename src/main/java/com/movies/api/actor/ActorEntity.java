@@ -1,10 +1,17 @@
 package com.movies.api.actor;
 
+import java.util.Set;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.movies.api.movie.MovieEntity;
+
 import jakarta.persistence.Column;
 
 @Entity
@@ -16,6 +23,10 @@ public class ActorEntity {
     @Column(name = "id_actor")
     private Long id;
     private String name;
+
+    @JsonIgnore
+    @ManyToMany(mappedBy = "actors")
+    private Set<MovieEntity> movies;
 
     public ActorEntity() {
     }
