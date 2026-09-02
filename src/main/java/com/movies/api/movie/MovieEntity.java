@@ -1,13 +1,18 @@
 package com.movies.api.movie;
 
+import com.movies.api.year.YearEntity;
+import com.movies.api.genre.GenreEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.Column;
+import java.util.Set;
 
 @Entity
 @Table(name = "movies")
@@ -25,6 +30,10 @@ public class MovieEntity {
     @ManyToOne
     @JoinColumn(name = "year_id", referencedColumnName = "id_year")
     private YearEntity year;
+
+    @ManyToMany
+    @JoinTable(name = "movies_genres", joinColumns = @JoinColumn(name = "movie_id"), inverseJoinColumns = @JoinColumn(name = "genre_id"))
+    private Set<GenreEntity> genres;
 
     public MovieEntity() {
     }
@@ -70,5 +79,13 @@ public class MovieEntity {
 
     public void setYear(YearEntity year) {
         this.year = year;
+    }
+
+    public Set<GenreEntity> getGenres() {
+        return genres;
+    }
+
+    public void setGenres(Set<GenreEntity> genres) {
+        this.genres = genres;
     }
 }
