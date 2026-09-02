@@ -155,7 +155,7 @@ pasa con los actores: ahí no cabe una FK y hace falta una tabla puente.
 
 ### Diagrama entidad-relación (Chen)
 
-![Diagrama de Chen](docs/diagrama-chen.svg)
+![Diagrama de Chen](docs/diagrama-chen.png)
 
 Modelo conceptual: los rombos son relaciones, las elipses atributos y el subrayado marca la PK.
 Las N:M se representan con un rombo, sin tabla intermedia.
