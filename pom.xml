@@ -8,10 +8,10 @@
 		<version>4.1.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.peliculas</groupId>
-	<artifactId>peliculas-api</artifactId>
+	<groupId>com.movies</groupId>
+	<artifactId>movies-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>peliculas-api</name>
+	<name>movies-api</name>
 	<description/>
 	<url/>
 	<licenses>
