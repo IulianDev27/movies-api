@@ -177,28 +177,28 @@ erDiagram
         int duration
         bigint year_id FK
     }
-    GENRES {
-        bigint id_genre PK
-        varchar name
-    }
-    ACTORS {
-        bigint id_actor PK
-        varchar name
-    }
     MOVIES_GENRES {
         bigint movie_id FK
         bigint genre_id FK
+    }
+    GENRES {
+        bigint id_genre PK
+        varchar name
     }
     MOVIES_ACTORS {
         bigint movie_id FK
         bigint actor_id FK
     }
+    ACTORS {
+        bigint id_actor PK
+        varchar name
+    }
 
-    YEARS        ||--o{ MOVIES        : "estrena"
-    MOVIES       ||--o{ MOVIES_GENRES : "tiene"
-    GENRES       ||--o{ MOVIES_GENRES : "clasifica"
-    MOVIES       ||--o{ MOVIES_ACTORS : "reparto"
-    ACTORS       ||--o{ MOVIES_ACTORS : "actua en"
+    YEARS ||--o{ MOVIES : "estrena"
+    MOVIES ||--o{ MOVIES_GENRES : "tiene"
+    MOVIES_GENRES }o--|| GENRES : "clasifica"
+    MOVIES ||--o{ MOVIES_ACTORS : "tiene"
+    MOVIES_ACTORS }o--|| ACTORS : "reparto"
 ```
 
 ## Estructura del proyecto
